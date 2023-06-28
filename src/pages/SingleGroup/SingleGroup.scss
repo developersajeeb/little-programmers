@@ -1,0 +1,225 @@
+.group-container {
+    background-color: #FFF9F9;
+    padding: 80px 128px;
+
+    .text-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hero-text {
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+
+        .hero-btn {
+            .assign-btn {
+                font-weight: 500;
+                border: 2px solid #4C54F8;
+                border-radius: 12px;
+                color: #4C54F8;
+                padding: 16px 30px;
+                margin-left: 20px;
+                transition: .3s;
+
+                &:hover {
+                    color: white;
+                    background-color: #4C54F8;
+                }
+            }
+
+            .add-member-btn {
+                font-weight: 500;
+                border: 2px solid #4C54F8;
+                background-color: #4C54F8;
+                color: white;
+                border-radius: 12px;
+                padding: 16px 30px;
+                margin-left: 20px;
+                transition: .3s;
+
+                &:hover {
+                    color: #4C54F8;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .for-transparent {
+        background-color: rgba(255, 255, 255, 0.726);
+    }
+
+    .members-btn {
+        .active-btn {
+            font-weight: 500;
+            border: 2px solid #4C54F8;
+            border-radius: 8px;
+            color: #4C54F8;
+            padding: 10px 20px;
+            transition: .3s;
+
+            &:hover {
+                color: white;
+                background-color: #4C54F8;
+            }
+        }
+
+        .active-btn[disabled] {
+            background-color: white;
+            opacity: 30%;
+            color: #4C54F8;
+          }          
+
+        .pending-btn {
+            font-weight: 500;
+            border: 2px solid #4C54F8;
+            border-radius: 8px;
+            color: #4C54F8;
+            padding: 10px 20px;
+            margin-left: 20px;
+            transition: .3s;
+
+            &:hover {
+                color: white;
+                background-color: #4C54F8;
+            }
+        }
+
+        .pending-btn[disabled] {
+            background-color: white;
+            opacity: 30%;
+            color: #4C54F8;
+          }  
+    }
+
+    .group-images {
+        width: 300px;
+        margin: 60px 0px;
+    }
+
+    .modal-form {
+        width: 380px;
+        border: 1px solid #9ED2C3;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        label {
+            color: #6C7172;
+            font-size: 18px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        input {
+            border: 2px solid #000000;
+            border-radius: 12px;
+            padding: 12px;
+            width: 100%;
+            margin-top: 12px;
+
+            &:focus {
+                border: 2px solid #0A6AF6;
+            }
+        }
+
+        .modal-list {
+            margin-top: 14px;
+            margin-bottom: 24px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn-cancel {
+                border: 2px solid black;
+                border-radius: 30px;
+                padding: 6px 48px;
+                font-weight: 600;
+                transition: .3s;
+
+                &:hover {
+                    border: 2px solid #0A6AF6;
+                    background-color: #0A6AF6;
+                    color: white;
+                }
+            }
+
+            .btn-continue {
+                border: 2px solid #0A6AF6;
+                border-radius: 30px;
+                background-color: #0A6AF6;
+                color: white;
+                padding: 6px 48px;
+                font-weight: 600;
+                transition: .3s;
+
+                &:hover {
+                    border: 2px solid #0754c7;
+                    background-color: #0754c7;
+                }
+            }
+        }
+
+        .second-modal {
+            .member-info {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 30px 0px;
+
+                figure {
+                    background-color: #DEDEDE;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 20px;
+                    width: 52px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .group-container {
+        padding: 40px 68px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .group-container {
+        padding: 40px 18px;
+
+        .text-container {
+            display: inline-block;
+
+            .hero-btn {
+                .assign-btn {
+                    margin-top: 30px;
+                    margin-left: 0px;
+                    display: block;
+                }
+
+                .add-member-btn {
+                    margin-top: 12px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .members-btn {
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.page-container {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        div {
+            text-align: center;
+
+            img {
+                width: 100px;
+                margin: auto;
+            }
+
+            h2 {
+                font-size: 22px;
+                font-weight: 500;
+                margin: 25px 0px;
+            }
+
+            .login-btn {
+                padding: 14px 20px;
+                border-radius: 12px;
+                background: #533FF0;
+                color: white;
+                margin-right: 10px;
+                transition: 0.3s;
+
+                &:hover {
+                    background: #6DFDD0;
+                    color: black;
+                }
+            }
+
+            .singUp-btn {
+                padding: 14px 20px;
+                border-radius: 12px;
+                background: #533FF0;
+                color: white;
+                transition: 0.3s;
+
+                &:hover {
+                    background: #6DFDD0;
+                    color: black;
+                }
+            }
+        }
+    }
+}
