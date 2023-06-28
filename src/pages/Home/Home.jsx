@@ -58,11 +58,11 @@ const Home = () => {
                             <form method="dialog" className="modal-box modal-form">
                                 <h3>Team category</h3>
                                 <label htmlFor="name">Team title</label>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" required/>
                                 <div className='modal-buttons'>
                                     <button className='btn-cancel'>Cancel</button>
                                     <Link to='/home/group-dashboard'>
-                                        <button className='btn-continue'>Continue</button>
+                                        <button type='submit' className='btn-continue'>Continue</button>
                                     </Link>
                                 </div>
                             </form>
