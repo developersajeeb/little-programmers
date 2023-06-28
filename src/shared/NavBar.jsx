@@ -23,7 +23,7 @@ const NavBar = () => {
                         <NavLink to='/home/group' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                             <li>Availability</li>
                         </NavLink>
-                        <NavLink to='/integration' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
+                        <NavLink to='/home/integration' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                             <li>Integration</li>
                         </NavLink>
                         <NavLink to='/home/group-dashboard' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
@@ -41,13 +41,13 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <ul className={`font-medium p-4 pt-3 grid gap-4 w-44 border text-center border-gray-300 rounded-lg bg-[#FFF9F9] md:hidden absolute duration-500 z-10 ${isOpen ? 'right-2 top-20' : 'right-2 -top-64'}`}>
-                    <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
+                    <NavLink to='/home/group' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                         <li>Availability</li>
                     </NavLink>
-                    <NavLink to='/instructors' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
+                    <NavLink to='/home/integration' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                         <li>Integration</li>
                     </NavLink>
-                    <NavLink to='/classes' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
+                    <NavLink to='/home/group-dashboard' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                         <li>Community</li>
                     </NavLink>
                     <li className="relative mx-auto inline-block">
