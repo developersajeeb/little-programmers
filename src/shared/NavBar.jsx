@@ -29,19 +29,15 @@ const NavBar = () => {
                         <NavLink to='/home/group-dashboard' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                             <li>Community</li>
                         </NavLink>
-                        <Link>
-                            <li className="relative -mr-4">
-                                <span className="border border-black p-2 rounded-full flex"><FaRegBell size={22} /></span>
-                                <p className="absolute top-0 right-0">
-                                    <span className="bg-blue-500 text-white p-1 rounded-full text-sm">3</span>
-                                </p>
-                            </li>
-                        </Link>
-                        <Link>
-                            <li>
-                                <img className='w-10 h-10 object-cover rounded-full cursor-pointer' src={profilePhoto} alt="User" />
-                            </li>
-                        </Link>
+                        <li className="relative -mr-4 cursor-pointer">
+                            <span className="border border-black p-2 rounded-full flex"><FaRegBell size={22} /></span>
+                            <p className="absolute top-0 right-0">
+                                <span className="bg-blue-500 text-white p-1 rounded-full text-sm">3</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img className='w-10 h-10 object-cover rounded-full cursor-pointer' src={profilePhoto} alt="User" />
+                        </li>
                     </ul>
                 </div>
                 <ul className={`font-medium p-4 pt-3 grid gap-4 w-44 border text-center border-gray-300 rounded-lg bg-[#FFF9F9] md:hidden absolute duration-500 z-10 ${isOpen ? 'right-2 top-20' : 'right-2 -top-64'}`}>
@@ -54,19 +50,15 @@ const NavBar = () => {
                     <NavLink to='/classes' className={({ isActive }) => isActive ? 'text-[#38406E] font-medium' : 'text-gray-800'}>
                         <li>Community</li>
                     </NavLink>
-                    <Link>
-                        <li className="relative mx-auto inline-block">
-                            <span className="border border-black p-2 rounded-full flex"><FaRegBell size={22} /></span>
-                            <p className="absolute top-0 right-0">
-                                <span className="bg-blue-500 text-white p-1 rounded-full text-sm">3</span>
-                            </p>
-                        </li>
-                    </Link>
-                    <Link>
-                        <li>
-                            <img className='w-10 h-10 object-cover rounded-full cursor-pointer mx-auto' src={profilePhoto} alt="User" />
-                        </li>
-                    </Link>
+                    <li className="relative mx-auto inline-block">
+                        <span className="border border-black p-2 rounded-full flex"><FaRegBell size={22} /></span>
+                        <p className="absolute top-0 right-0">
+                            <span className="bg-blue-500 text-white p-1 rounded-full text-sm">3</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img className='w-10 h-10 object-cover rounded-full cursor-pointer mx-auto' src={profilePhoto} alt="User" />
+                    </li>
                 </ul>
             </div>
         </nav>
